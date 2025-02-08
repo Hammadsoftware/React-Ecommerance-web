@@ -1,19 +1,21 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import tailwindcss from '@tailwindcss/vite'
-import path from 'path';
-// https://vite.dev/config/
+import path from 'path'
+
+// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [ tailwindcss(),
-    react(),
-    
+  plugins: [
+    react(), // صرف React plugin رکھیں
   ],
   resolve: {
     alias: {
       '@': path.resolve(__dirname, 'src'),
     },
   },
-
-  
-  base:"/React-Ecommerance-web/"
+  css: {
+    postcss: {
+      plugins: [require('tailwindcss'), require('autoprefixer')],
+    },
+  },
+  base: "/React-Ecommerance-web/" // Deployment کے لیے Base URL
 })
