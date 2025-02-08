@@ -6,9 +6,9 @@ import AOS from "aos";
 import "aos/dist/aos.css"; 
 
 // ✅ Import images correctly
-import headset from "../assets/headset.jpg";
-import dslr from "../assets/dslr.jpg";
-import earbuds from "../assets/earbuds.jpg";
+import headset from "/assets/headset.jpg";
+import dslr from "/assets/dslr.jpg";
+import earbuds from "/assets/earbuds.jpg";
 
 export const Hero = () => {
   useEffect(() => {

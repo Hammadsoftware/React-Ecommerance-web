@@ -5,7 +5,7 @@ import path from 'path'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    react(), // صرف React plugin رکھیں
+    react(), // Keep only the React plugin
   ],
   resolve: {
     alias: {
@@ -17,5 +17,5 @@ export default defineConfig({
       plugins: [require('tailwindcss'), require('autoprefixer')],
     },
   },
-  base: "/React-Ecommerance-web/" // Deployment کے لیے Base URL
+  base: "/React-Ecommerance-web/" // Base URL for deployment
 })
