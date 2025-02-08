@@ -1,6 +1,11 @@
 import React from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
+import cat1 from 'src/assets/cat1.jpg';
+import cat2 from 'src/assets/cat2.jpg';
+import cat3 from 'src/assets/cat3.jpg';
+import cat4 from 'src/assets/cat4.jpg';
+import cat5 from 'src/assets/cat5.jpg';
 
 // Initialize AOS
 AOS.init();
@@ -18,31 +23,31 @@ export const Catogarey = () => {
 
         <div data-aos="zoom-in" data-aos-delay="100" className='flex   justify-center items-center flex-col gap-1 h-64' >
 
-          <img className='rounded-full h-48' src="src/assets/cat1.jpg" alt="" />
+          <img className='rounded-full h-48' src={cat1} alt="" />
           <h1 className='text-blue-800 font-semibold'>Speaker</h1>
         </div>
 
         <div data-aos="zoom-in" data-aos-delay="100" className='flex   justify-center items-center flex-col gap-1 h-64' >
 
-          <img className='rounded-full h-48' src="src/assets/cat2.jpg" alt="" />
+          <img className='rounded-full h-48' src={cat2} alt="" />
           <h1 className='text-blue-800 font-semibold'>Speaker</h1>
         </div>
 
         <div data-aos="zoom-in" data-aos-delay="100" className='flex   justify-center items-center flex-col gap-1 h-64' >
 
-          <img className='rounded-full h-48' src="src/assets/cat3.jpg" alt="" />
+          <img className='rounded-full h-48' src={cat3} alt="" />
           <h1 className='text-blue-800 font-semibold'>Wire</h1>
         </div>
 
         <div data-aos="zoom-in" data-aos-delay="100" className='flex   justify-center items-center flex-col gap-1 h-64' >
 
-          <img className='rounded-full h-48' src="src/assets/cat4.jpg" alt="" />
+          <img className='rounded-full h-48' src={cat4} alt="" />
           <h1 className='text-blue-800 font-semibold'>DVD</h1>
         </div>
 
         <div data-aos="zoom-in" data-aos-delay="100" className='flex   justify-center items-center flex-col gap-1 h-64' >
 
-          <img className='rounded-full h-48' src="src/assets/cat5.jpg" alt="" />
+          <img className='rounded-full h-48' src={cat5} alt="" />
           <h1 className='text-blue-800 font-semibold'>Camera</h1>
         </div>
       </div>

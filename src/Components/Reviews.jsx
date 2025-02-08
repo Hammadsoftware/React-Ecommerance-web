@@ -6,9 +6,13 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
-
 // Initialize AOS
 AOS.init();
+import test1 from "src/assets/test1.jpg"
+import test2 from "src/assets/test2.jpg"
+import test3 from "src/assets/test3.jpg"
+import test4 from "src/assets/test4.jpg"
+import test5 from "src/assets/test5.jpg"
 export const Reviews = () => {
   const settings = {
     dots: true,
@@ -21,35 +25,35 @@ export const Reviews = () => {
     {
       id: 1,
       name: "Amelia",
-      image: "src/assets/test-1.jpg",
+      image: `${test1}`,
       comment: "Excellent service! I'm really impressed.",
       rating: 5
     },
     {
       id: 2,
       name: "Freya",
-      image: "src/assets/test-2.jpg",
+      image: `${test2}`,
       comment: "Good quality, but delivery was a bit late.",
       rating: 4
     },
     {
       id: 3,
       name: "Hamza Sheikh",
-      image: "src/assets/test-3.jpg",
+      image: `${test3}`,
       comment: "Great experience! I will order again.",
       rating: 5
     },
     {
       id: 4,
       name: "Jhon",
-      image: "src/assets/test-4.jpg",
+      image: `${test4}`,
       comment: "The product was good, but packaging could be better.",
       rating: 3
     },
     {
       id: 5,
       name: "Olivia",
-      image: "src/assets/test-5.jpg",
+      image: `${test5}`,
       comment: "Amazing! I highly recommend it.",
       rating: 5
     }

@@ -7,7 +7,9 @@ import 'aos/dist/aos.css'; // Import AOS styles
 
 // Initialize AOS
 AOS.init();
-
+import headset from 'src/assets/headset.jpg';
+import dslr from 'src/assets/dslr.jpg';
+import earbuds from 'src/assets/earbuds.jpg';
 export const Hero = () => {
   const settings = {
     dots: true,
@@ -20,7 +22,8 @@ export const Hero = () => {
   return (
     <div className="slider-container">
       <Slider {...settings}>
-        <div className="w-full h-[600px] bg-cover bg-center bg-[url('src/assets/headset.jpg')] flex flex-col justify-center" >
+        <div className="w-full h-[600px] bg-cover bg-center  flex flex-col justify-center"   style={{ backgroundImage: `url(${headset})` }}
+ >
 
           <div className="w-full h-[600px] flex flex-col justify-center items-start lg:pl-44 pl-12 gap-4 "   >
             <h1 data-aos="zoom-in" data-aos-delay="100" className="text-amber-300 font-bold lg:text-[20px] text-[12px]  border rounded lg:w-96 w-48 text-center ">Get upto Discounts 80% off</h1>
@@ -31,7 +34,7 @@ export const Hero = () => {
 
 
         </div>
-        <div className="w-full h-[600px] bg-cover bg-center bg-[url('src/assets/dslr.jpg')] flex flex-col justify-center">
+        <div className="w-full h-[600px] bg-cover bg-center  flex flex-col justify-center" style={{ backgroundImage: `url(${dslr})` }}>
           <div className="w-full h-[600px] flex flex-col justify-center items-start lg:pl-44 pl-12 gap-4 "   >
             <h1 data-aos="zoom-in" data-aos-delay="100" className="text-amber-300 font-bold lg:text-[20px] text-[12px]  border rounded lg:w-96 w-48 text-center ">Get upto Discounts 80% off</h1>
             <h1 data-aos="zoom-in" data-aos-delay="100" className="text-white font-bold lg:text-[100px] text-[60px]">DSLR 360 <br />CAMERA</h1>
@@ -40,7 +43,7 @@ export const Hero = () => {
           </div>
 
         </div>
-        <div className="w-full h-[600px] bg-cover bg-center bg-[url('src/assets/earbuds.jpg')] flex flex-col justify-center">
+        <div className="w-full h-[600px]  flex flex-col justify-center" style={{ backgroundImage: `url(${earbuds})` }}>
           <div className="w-full h-[600px] flex flex-col justify-center items-start lg:pl-44 pl-12 gap-4 "   >
             <h1 data-aos="zoom-in" data-aos-delay="100" className="text-amber-300 font-bold lg:text-[20px] text-[12px]  border rounded lg:w-96 w-48 text-center ">Get upto Discounts 80% off</h1>
             <h1 data-aos="zoom-in" data-aos-delay="100" className="text-white font-bold lg:text-[100px] text-[60px]">EARBUDS <br />WIRELESS</h1>

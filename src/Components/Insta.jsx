@@ -1,42 +1,47 @@
 import React from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
-
+import insta1 from "src/assets/insta1.jpg";
+import insta2 from "src/assets/insta2.jpg";
+import insta3 from "src/assets/insta3.jpg";
+import insta4 from "src/assets/insta4.jpg";
+import insta5 from "src/assets/insta5.jpg";
+import insta6 from "src/assets/insta6.jpg";
 export const Insta = () => {
   const image=[
    {
 
-    img: "src/assets/insta-1.jpg",
+    img:`${insta1}` ,
     id : 1
     
    },
    {
 
-    img: "src/assets/insta-2.jpg",
+    img: `${insta2}`,
     id : 2
     
    },
    {
 
-    img: "src/assets/insta-3.jpg",
+    img: `${insta3}`,
     id : 3
     
    },
    {
 
-    img: "src/assets/insta-4.jpg",
+    img: `${insta4}`,
     id : 4
     
    },
    {
 
-    img: "src/assets/insta-5.jpg",
+    img: `${insta5}`,
     id : 5
     
    },
    {
 
-    img: "src/assets/insta-6.jpg",
+    img: `${insta6}`,
     id : 6
     
    },

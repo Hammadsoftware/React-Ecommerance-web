@@ -1,28 +1,39 @@
 import React from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
-
+import client1 from 'src/assets/client1.png';
+import client2 from 'src/assets/client2.png';
+import client3 from 'src/assets/client3.png';
+import client4 from 'src/assets/client4.png';
+import client5 from 'src/assets/client5.png';
+import client6 from 'src/assets/client6.png';
+import google from 'src/assets/google.jpg';
+import apple from 'src/assets/apple.jpg';
+import pay1 from 'src/assets/pay1.jpg';
+import pay2 from 'src/assets/pay2.jpg';
+import pay3 from 'src/assets/pay3.jpg';
+import pay4 from 'src/assets/pay4.jpg';
 export const Footer = () => {
   return (
     <>
       <div className='pl-10 bg-blue-700 w-full lg:h-20 h-60 grid lg:grid-cols-6 grid-cols-2 justify-center items-center gap-5 '>
         <div>
-          <img data-aos="zoom-in" className='lg:w-30 w-25 lg:h-15 h-10 bg-cover bg-center ' src="src/assets/client1.png" alt="" />
+          <img data-aos="zoom-in" className='lg:w-30 w-25 lg:h-15 h-10 bg-cover bg-center ' src={client1} alt="" />
         </div>
         <div>
-          <img data-aos="zoom-in" className='lg:w-30 w-25 lg:h-15 h-10  bg-cover bg-center ' src="src/assets/client2.png" alt="" />
+          <img data-aos="zoom-in" className='lg:w-30 w-25 lg:h-15 h-10  bg-cover bg-center ' src={client2} alt="" />
         </div>
         <div>
-          <img data-aos="zoom-in" className='lg:w-30 w-25 lg:h-15 h-10  bg-cover bg-center ' src="src/assets/client3.png" alt="" />
+          <img data-aos="zoom-in" className='lg:w-30 w-25 lg:h-15 h-10  bg-cover bg-center ' src={client3} alt="" />
         </div>
         <div>
-          <img data-aos="zoom-in" className='lg:w-30 w-25 lg:h-15 h-10  bg-cover bg-center ' src="src/assets/client4.png" alt="" />
+          <img data-aos="zoom-in" className='lg:w-30 w-25 lg:h-15 h-10  bg-cover bg-center ' src={client4} alt="" />
         </div>
         <div>
-          <img data-aos="zoom-in" className='lg:w-30 w-25 lg:h-15 h-10  bg-cover bg-center ' src="src/assets/client5.png" alt="" />
+          <img data-aos="zoom-in" className='lg:w-30 w-25 lg:h-15 h-10  bg-cover bg-center ' src={client5} alt="" />
         </div>
         <div>
-          <img data-aos="zoom-in" className='lg:w-30 w-25 lg:h-15 h-10  bg-cover bg-center ' src="src/assets/client6.png" alt="" />
+          <img data-aos="zoom-in" className='lg:w-30 w-25 lg:h-15 h-10  bg-cover bg-center ' src={client6} alt="" />
         </div>
 
       </div>
@@ -72,8 +83,8 @@ export const Footer = () => {
     </p>
     <h1 className="lg:text-5xl text-2xl font-bold">Download Our App</h1>
     <div data-aos="zoom-in" className="flex gap-4">
-      <img src="src/assets/google.jpg" alt="Google Play Store" className="w-32 cursor-pointer" />
-      <img src="src/assets/apple.jpg" alt="Apple App Store" className="w-32 cursor-pointer" />
+      <img src={google} alt="Google Play Store" className="w-32 cursor-pointer" />
+      <img src={apple} alt="Apple App Store" className="w-32 cursor-pointer" />
     </div>
   </div>
 
@@ -126,10 +137,10 @@ export const Footer = () => {
   
 
    <div data-aos="zoom-in" className=' w-full flex justify-center items-center  bg-blue-50 gap-5 pt-5 border-t-1' >
-        <img className='lg:w-20 w-9' src="src/assets/pay-1.jpg" alt="" />
-        <img className='lg:w-20 w-9' src="src/assets/pay-2.jpg" alt="" />
-        <img className='lg:w-20 w-9' src="src/assets/pay-3.jpg" alt="" />
-        <img className='lg:w-20 w-9' src="src/assets/pay-4.jpg" alt="" />
+        <img className='lg:w-20 w-9' src={pay1} alt="" />
+        <img className='lg:w-20 w-9' src={pay2} alt="" />
+        <img className='lg:w-20 w-9' src={pay3} alt="" />
+        <img className='lg:w-20 w-9' src={pay4} alt="" />
       </div>
 
       <div data-aos="zoom-in" className=' w-full flex flex-col justify-center items-center gap-2 pt-10  bg-blue-50 pb-20'>

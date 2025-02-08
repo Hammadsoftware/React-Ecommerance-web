@@ -7,5 +7,5 @@ export default defineConfig({
     react(),
     
   ],
-  base:"/React-Ecommerance-web"
+  base:"/React-Ecommerance-web/"
 })
