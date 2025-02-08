@@ -8,11 +8,11 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
 // Initialize AOS
 AOS.init();
-import test1 from "src/assets/test1.jpg"
-import test2 from "src/assets/test2.jpg"
-import test3 from "src/assets/test3.jpg"
-import test4 from "src/assets/test4.jpg"
-import test5 from "src/assets/test5.jpg"
+import test1 from "@/assets/test1.jpg"
+import test2 from "@/assets/test2.jpg"
+import test3 from "@/assets/test3.jpg"
+import test4 from "@/assets/test4.jpg"
+import test5 from "@/assets/test5.jpg"
 export const Reviews = () => {
   const settings = {
     dots: true,

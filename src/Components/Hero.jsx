@@ -7,9 +7,9 @@ import 'aos/dist/aos.css'; // Import AOS styles
 
 // Initialize AOS
 AOS.init();
-import headset from 'src/assets/headset.jpg';
-import dslr from 'src/assets/dslr.jpg';
-import earbuds from 'src/assets/earbuds.jpg';
+import headset from '@/assets/headset.jpg';
+import dslr from '@/assets/dslr.jpg';
+import earbuds from '@/assets/earbuds.jpg';
 export const Hero = () => {
   const settings = {
     dots: true,

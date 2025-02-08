@@ -4,9 +4,9 @@ import 'aos/dist/aos.css'; // Import AOS styles
 
 // Initialize AOS
 AOS.init();
-import banner1 from 'src/assets/banner1.jpg'
-import banner2 from 'src/assets/banner2.jpg'
-import banner3 from 'src/assets/banner3.jpg'
+import banner1 from '@/assets/banner1.jpg'
+import banner2 from '@/assets/banner2.jpg'
+import banner3 from '@/assets/banner3.jpg'
 export function Types() {
   return (
     <div className="w-full lg:h-80 h-fit flex lg:flex-row flex-col justify-center items-center gap-15  pt-10 pb-10">

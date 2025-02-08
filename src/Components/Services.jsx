@@ -1,7 +1,7 @@
 import React from 'react'
-import shipping from "src/assets/shipping.png"
-import parsel from "src/assets/parsel.png"
-import payment from "src/assets/payment.png"
+import shipping from "@/assets/shipping.png"
+import parsel from "@/assets/parsel.png"
+import payment from "@/assets/payment.png"
 export const Services = () => {
   return (
     <>

@@ -1,11 +1,11 @@
 import React from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
-import cat1 from 'src/assets/cat1.jpg';
-import cat2 from 'src/assets/cat2.jpg';
-import cat3 from 'src/assets/cat3.jpg';
-import cat4 from 'src/assets/cat4.jpg';
-import cat5 from 'src/assets/cat5.jpg';
+import cat1 from '@/assets/cat1.jpg';
+import cat2 from '@/assets/cat2.jpg';
+import cat3 from '@/assets/cat3.jpg';
+import cat4 from '@/assets/cat4.jpg';
+import cat5 from '@/assets/cat5.jpg';
 
 // Initialize AOS
 AOS.init();
