@@ -1,9 +1,12 @@
 import React from 'react';
-import shipping from "/assets/shipping.png";
-import parsel from "/assets/parsel.png";
-import payment from "/assets/payment.png";
-
+import shipping from "../assets/shipping.png";
+import parsel from "../assets/parsel.png";
+import payment from "../assets/payment.png";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+AOS.init();
 export const Services = () => {
+  
   return (
     <>
       <div className='flex justify-center items-center lg:flex-row flex-col gap-20 pt-20 pb-20'>

@@ -3,7 +3,10 @@ import { products } from '../export'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
 import { TiHeartFullOutline } from "react-icons/ti";
+AOS.init();
 export const Productgrid = () => {
+  
+
   return (
     <>
       <div  className='w-full h-fit bg-slate-100 lg:px-20 px-5 flex flex-col justify-center items-center text-center gap-5 py-10'>

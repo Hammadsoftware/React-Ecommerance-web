@@ -1,19 +1,17 @@
-import React, { useEffect } from "react";
+
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import AOS from "aos";
-import "aos/dist/aos.css"; 
+import "aos/dist/aos.css";
+AOS.init();
 
-// ✅ Import images correctly
-import headset from "/assets/headset.jpg";
-import dslr from "/assets/dslr.jpg";
-import earbuds from "/assets/earbuds.jpg";
+import headset from "../assets/headset.jpg";
+import dslr from "../assets/dslr.jpg";
+import earbuds from "../assets/earbuds.jpg";
 
 export const Hero = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
+
 
   const settings = {
     dots: true,
@@ -26,10 +24,7 @@ export const Hero = () => {
   return (
     <div className="slider-container">
       <Slider {...settings}>
-        <div 
-          className="w-full h-[600px] bg-cover bg-center flex flex-col justify-center"
-          style={{ backgroundImage: `url(${headset})` }}
-        >
+        <div  className="w-full min-h-screen bg-cover bg-center flex flex-col justify-center"    style={{ backgroundImage: `url(${headset})` }} >
           <div className="w-full h-[600px] flex flex-col justify-center items-start lg:pl-44 pl-12 gap-4">
             <h1 data-aos="zoom-in" className="text-amber-300 font-bold lg:text-[20px] text-[12px] border rounded lg:w-96 w-48 text-center">
               Get upto Discounts 80% off
@@ -47,10 +42,8 @@ export const Hero = () => {
         </div>
 
         {/* DSLR Slide */}
-        <div 
-          className="w-full h-[600px] bg-cover bg-center flex flex-col justify-center"
-          style={{ backgroundImage: `url(${dslr})` }}
-        >
+        <div
+          className="w-full min-h-screen bg-cover bg-center flex flex-col justify-center"  style={{ backgroundImage: `url(${dslr})` }} >
           <div className="w-full h-[600px] flex flex-col justify-center items-start lg:pl-44 pl-12 gap-4">
             <h1 data-aos="zoom-in" className="text-amber-300 font-bold lg:text-[20px] text-[12px] border rounded lg:w-96 w-48 text-center">
               Get upto Discounts 80% off
@@ -68,10 +61,8 @@ export const Hero = () => {
         </div>
 
         {/* Earbuds Slide */}
-        <div 
-          className="w-full h-[600px] flex flex-col justify-center"
-          style={{ backgroundImage: `url(${earbuds})` }}
-        >
+        <div  className="w-full min-h-screen flex flex-col justify-center"  style={{ backgroundImage: `url(${earbuds})` }} >
+
           <div className="w-full h-[600px] flex flex-col justify-center items-start lg:pl-44 pl-12 gap-4">
             <h1 data-aos="zoom-in" className="text-amber-300 font-bold lg:text-[20px] text-[12px] border rounded lg:w-96 w-48 text-center">
               Get upto Discounts 80% off

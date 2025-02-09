@@ -6,11 +6,11 @@ import laptop from "./assets/laptop.jpg";
 import headset from "./assets/cat3.jpg";
 import mouse from "./assets/mouse.jpg";
 import camera from "./assets/camera.jpg";
-import test1 from "./assets/test-1.jpg";
-import test2 from "./assets/test-2.jpg";
-import test3 from "./assets/test-3.jpg";
-import test4 from "./assets/test-4.jpg";
-import test5 from "./assets/test-5.jpg";
+import test1 from "./assets/test1.jpg";
+import test2 from "./assets/test2.jpg";
+import test3 from "./assets/test3.jpg";
+import test4 from "./assets/test4.jpg";
+import test5 from "./assets/test5.jpg";
 
 export const products = [
   {

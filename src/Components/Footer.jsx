@@ -1,19 +1,22 @@
 import React from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
-import client1 from '/assets/client1.png';
-import client2 from '/assets/client2.png';
-import client3 from '/assets/client3.png';
-import client4 from '/assets/client4.png';
-import client5 from '/assets/client5.png';
-import client6 from '/assets/client6.png';
-import google from '/assets/google.jpg';
-import apple from '/assets/apple.jpg';
-import pay1 from '/assets/pay1.jpg';
-import pay2 from '/assets/pay2.jpg';
-import pay3 from '/assets/pay3.jpg';
-import pay4 from '/assets/pay4.jpg';
+import client1 from '../assets/client1.png';
+import client2 from '../assets/client2.png';
+import client3 from '../assets/client3.png';
+import client4 from '../assets/client4.png';
+import client5 from '../assets/client5.png';
+import client6 from '../assets/client6.png';
+import google from '../assets/google.jpg';
+import apple from '../assets/apple.jpg';
+import pay1 from '../assets/pay1.jpg';
+import pay2 from '../assets/pay2.jpg';
+import pay3 from '../assets/pay3.jpg';
+import pay4 from '../assets/pay4.jpg';
+AOS.init();
 export const Footer = () => {
+  
+
   return (
     <>
       <div className='pl-10 bg-blue-700 w-full lg:h-20 h-60 grid lg:grid-cols-6 grid-cols-2 justify-center items-center gap-5 '>

@@ -3,18 +3,15 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 // ✅ Import images correctly
-import insta1 from "/assets/insta1.jpg";
-import insta2 from "/assets/insta2.jpg";
-import insta3 from "/assets/insta3.jpg";
-import insta4 from "/assets/insta4.jpg";
-import insta5 from "/assets/insta5.jpg";
-import insta6 from "/assets/insta6.jpg";
-
+import insta1 from "../assets/insta1.jpg";
+import insta2 from "../assets/insta2.jpg";
+import insta3 from "../assets/insta3.jpg";
+import insta4 from "../assets/insta4.jpg";
+import insta5 from "../assets/insta5.jpg";
+import insta6 from "../assets/insta6.jpg";
+AOS.init();
 export const Insta = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
-
+ 
   const image = [
     { img: insta1, id: 1 },
     { img: insta2, id: 2 },

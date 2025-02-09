@@ -6,18 +6,16 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
+AOS.init();
 // ✅ Import images correctly
-import test1 from "/assets/test1.jpg";
-import test2 from "/assets/test2.jpg";
-import test3 from "/assets/test3.jpg";
-import test4 from "/assets/test4.jpg";
-import test5 from "/assets/test5.jpg";
+import test1 from "../assets/test1.jpg";
+import test2 from "../assets/test2.jpg";
+import test3 from "../assets/test3.jpg";
+import test4 from "../assets/test4.jpg";
+import test5 from "../assets/test5.jpg";
 
 export const Reviews = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
+ 
 
   const settings = {
     dots: true,
@@ -42,29 +40,33 @@ export const Reviews = () => {
         <h1 className='lg:text-4xl text-3xl font-bold pt-3'>Our Customers Love</h1>
       </div>
 
-      <div className="slider-container">
-        <Slider {...settings}>
-          {customerReviews.map((item, index) => (
-            <div data-aos="zoom-in" data-aos-delay="300" key={index} className="pt-15 w-full flex flex-col justify-center items-center">
-              
-              <img className="w-32 h-32 object-cover bg-center border rounded-full" src={item.image} alt={`Slide ${index + 1}`} />
-              
-              <h1 className='pt-5 text-2xl font-bold text-center'>{item.name}</h1>
+      <div className="slider-container ">
+  <Slider {...settings}>
+    {customerReviews.map((item, index) => (
+      <div data-aos="zoom-in" data-aos-delay="300" key={index} className=" w-full flex flex-col justify-center items-center">
+        <div className='w-full flex justify-center items-center'>
+        <img className=" w-32 h-32 object-cover bg-center border rounded-full" src={item.image} alt={`Slide ${index + 1}`} />
+        </div>
 
-              {/* Star Ratings */}
-              <div className='pt-1 w-full flex gap-2 justify-center items-center'>
-                {[...Array(item.rating)].map((_, i) => (
-                  <IoStar key={i} className='text-blue-900' />
-                ))}
-              </div>
+        
+        <h1 className='pt-5 text-2xl font-bold text-center'>{item.name}</h1>
 
-              <p className='pb-7 text-center text-2xl text-gray-600'>{item.comment}</p>
-              
-              <FaQuoteLeft className='text-5xl text-blue-800' />
-            </div>
+        <div className='pt-1 w-full flex gap-2 justify-center items-center'>
+          {[...Array(item.rating)].map((_, i) => (
+            <IoStar key={i} className='text-blue-900' />
           ))}
-        </Slider>
+        </div>
+
+        <p className='pb-7 text-center text-2xl text-gray-600'>{item.comment}</p>
+        <div className='w-full flex justify-center items-center'>
+        <FaQuoteLeft className='  text-5xl text-blue-800' />
+        </div>
+       
       </div>
+    ))}
+  </Slider>
+</div>
+
     </>
   );
 };

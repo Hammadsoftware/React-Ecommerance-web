@@ -2,14 +2,11 @@ import React, { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
 
-import banner1 from '/assets/banner1.jpg';
-import banner2 from '/assets/banner2.jpg';
-import banner3 from '/assets/banner3.jpg';
-
+import banner1 from '../assets/banner1.jpg';
+import banner2 from '../assets/banner2.jpg';
+import banner3 from '../assets/banner3.jpg';
+AOS.init();
 export function Types() {
-  useEffect(() => {
-    AOS.init({ duration: 1000 });
-  }, []);
 
   return (
     <div className="w-full lg:h-80 h-fit flex lg:flex-row flex-col justify-center items-center gap-15 pt-10 pb-10">
