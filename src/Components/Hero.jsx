@@ -26,7 +26,7 @@ export const Hero = () => {
     <div className="slider-container">
       <Slider {...settings}>
       <div 
-  className="w-full h-screen bg-cover bg-center flex flex-col justify-center bg-[url('src/assets/headset.jpg')]"
+  className="bg-blue-600 w-full h-screen bg-cover bg-center flex flex-col justify-center bg-[url('src/assets/headset.jpg')]"
   
   >
 
@@ -68,7 +68,7 @@ export const Hero = () => {
         </div>
 
         {/* Earbuds Slide */}
-        <div  className="w-full min-h-screen flex flex-col justify-center bg-[url('src/assets/headset.jpg')]"  >
+        <div  className="w-full min-h-screen flex flex-col justify-center bg-[url('src/assets/headset.jpg')]n"  >
 
           <div className="w-full h-[600px] flex flex-col justify-center items-start lg:pl-44 pl-12 gap-4">
             <h1 data-aos="zoom-in" className="text-amber-300 font-bold lg:text-[20px] text-[12px] border rounded lg:w-96 w-48 text-center">
