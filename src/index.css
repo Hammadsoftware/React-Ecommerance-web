@@ -5,4 +5,9 @@ html {
   .slider-container {
     overflow: visible !important;
   }
+  .slider-container {
+    position: relative;
+    z-index: 10;
+    overflow: visible;
+  }
   

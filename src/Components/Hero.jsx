@@ -20,11 +20,17 @@ export const Hero = () => {
     slidesToShow: 1,
     slidesToScroll: 1
   };
+  console.log(headset, dslr, earbuds);
 
   return (
     <div className="slider-container">
       <Slider {...settings}>
-        <div  className="w-full min-h-screen bg-cover bg-center flex flex-col justify-center"    style={{ backgroundImage: `url(${headset})` }} >
+      <div 
+  className="w-full h-screen bg-cover bg-center flex flex-col justify-center bg-[url('src/assets/headset.jpg')]"
+  
+  >
+
+
           <div className="w-full h-[600px] flex flex-col justify-center items-start lg:pl-44 pl-12 gap-4">
             <h1 data-aos="zoom-in" className="text-amber-300 font-bold lg:text-[20px] text-[12px] border rounded lg:w-96 w-48 text-center">
               Get upto Discounts 80% off
@@ -43,11 +49,12 @@ export const Hero = () => {
 
         {/* DSLR Slide */}
         <div
-          className="w-full min-h-screen bg-cover bg-center flex flex-col justify-center"  style={{ backgroundImage: `url(${dslr})` }} >
+          className="w-full min-h-screen bg-cover bg-center flex flex-col justify-center bg-[url('src/assets/headset.jpg')]"  >
           <div className="w-full h-[600px] flex flex-col justify-center items-start lg:pl-44 pl-12 gap-4">
             <h1 data-aos="zoom-in" className="text-amber-300 font-bold lg:text-[20px] text-[12px] border rounded lg:w-96 w-48 text-center">
               Get upto Discounts 80% off
-            </h1>
+            </h1><img src="/assets/headset.jpg" alt="Headset" />
+
             <h1 data-aos="zoom-in" className="text-white font-bold lg:text-[100px] text-[60px]">
               DSLR 360 <br /> CAMERA
             </h1>
@@ -61,7 +68,7 @@ export const Hero = () => {
         </div>
 
         {/* Earbuds Slide */}
-        <div  className="w-full min-h-screen flex flex-col justify-center"  style={{ backgroundImage: `url(${earbuds})` }} >
+        <div  className="w-full min-h-screen flex flex-col justify-center bg-[url('src/assets/headset.jpg')]"  >
 
           <div className="w-full h-[600px] flex flex-col justify-center items-start lg:pl-44 pl-12 gap-4">
             <h1 data-aos="zoom-in" className="text-amber-300 font-bold lg:text-[20px] text-[12px] border rounded lg:w-96 w-48 text-center">

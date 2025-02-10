@@ -1,15 +1,12 @@
 import React, { useState } from "react";
 
 export const Header = () => {
-  // State to manage navbar visibility
   const [isOpen, setIsOpen] = useState(false);
 
-  // Function to toggle navbar visibility
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
   };
 
-  // Array of navigation items
   const navItems = [
     { link: "Home", path: "home" },
     { link: "Products", path: "products" },
@@ -19,12 +16,11 @@ export const Header = () => {
 
   return (
     <nav className="bg-white shadow-md w-full fixed top-0 left-0 z-50">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          
           <div className="text-blue-800 font-bold text-xl">.Shop</div>
 
-          {/* Hamburger Menu Button (for mobile) */}
+          {/* Hamburger Menu Button */}
           <button
             onClick={toggleNavbar}
             className="text-blue-800 focus:outline-none lg:hidden"
@@ -47,15 +43,15 @@ export const Header = () => {
 
           {/* Navbar Links */}
           <div
-            className={`${isOpen ? "block" : "hidden"} lg:flex lg:items-center w-full lg:w-auto`}
+            className={`absolute lg:static top-16 left-0 w-full lg:w-auto bg-white lg:bg-transparent lg:flex lg:items-center transition-all duration-300 ease-in-out ${isOpen ? "block" : "hidden"}`}
           >
-            <ul className="flex flex-col lg:flex-row lg:space-x-6 mt-4 lg:mt-0">
+            <ul className="flex flex-col lg:flex-row lg:space-x-6 mt-4 lg:mt-0 lg:items-center w-full lg:w-auto">
               {navItems.map((item, index) => (
-                <li key={index}>
+                <li key={index} className="text-center w-full lg:w-auto">
                   <a
                     href={`#${item.path}`}
-                    className="text-blue-800 hover:bg-blue-700 border-none w-20 text-center rounded hover:text-white  block py-2 lg:py-0"
-                    onClick={() => setIsOpen(false)} // Close navbar on mobile after clicking a link
+                    className="text-blue-800 hover:bg-blue-700 border-none w-full lg:w-auto text-center rounded hover:text-white block py-2 px-4"
+                    onClick={() => setIsOpen(false)}
                   >
                     {item.link}
                   </a>

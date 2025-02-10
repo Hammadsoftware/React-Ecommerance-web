@@ -1,4 +1,3 @@
-
 import { Banner } from "./Components/Banner";
 import { Catogarey } from "./Components/Catogarey";
 import { Header } from "./Components/Header";
@@ -13,54 +12,54 @@ import { Footer } from "./Components/Footer";
 const App = () => {
   return (
     <>
-      <div className="w-full">
+      <div className="w-full min-h-screen overflow-x-hidden">
         {/* Header */}
         <Header />
 
         {/* Hero Section */}
-        <section id="home">
+        <section id="home" className="w-full">
           <Hero />
         </section>
 
         {/* Category Section */}
-        <section id="products">
+        <section id="products" className="w-full">
           <Catogarey />
         </section>
 
         {/* Types Section */}
-        <section id="services">
+        <section id="types" className="w-full">
           <Types />
         </section>
 
         {/* Services Section */}
-        <section id="services">
+        <section id="services" className="w-full">
           <Services />
         </section>
 
         {/* Product Grid Section */}
-        <section id="products">
+        <section id="products" className="w-full">
           <Productgrid />
         </section>
 
         {/* Banner Section */}
-        <section>
+        <section className="w-full">
           <Banner />
         </section>
 
         {/* Reviews Section */}
-        <section id="reviews">
+        <section id="reviews" className="w-full">
           <Reviews />
         </section>
 
         {/* Instagram Section */}
-        <section>
+        <section className="w-full">
           <Insta />
         </section>
 
-        <section id="contact">
-        <Footer />
+        {/* Footer Section */}
+        <section id="contact" className="w-full">
+          <Footer />
         </section>
-        
       </div>
     </>
   );
